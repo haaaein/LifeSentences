@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="test.js"> </script>
+<script>
+	function loginCheck() {
+	var i;
+	for (i=0;i<3;i++) {
+	if (member_id[i] == logForm.id.value && member_pwd[i] == logForm.pwd.value)
+	{ alert( member_name[i] + "님이 로그인하셨습니다.");
+	return true;
+	}
+	else {
+	alert("정확히 아이디와 비밀번호를 입력하세요.");
+	location.href="menu.html";
+	return false;
+	
+	}
+	}
+	}
+</script>
+<style>
+body {
+padding: 20px;
+}
+</style>
+</head>
+<body background="images/life6.jpg">
+ <form name="logForm" method="post" action="menu.jsp" target="right">
+<center>
+	<fieldset>
+	<legend> 로그인 정보 입력 </legend>
+	<center>
+	<p> 아이디 : <input type="text" name="id" size=10 value=""></p>
+	<p> 비밀번호 : <input type=password name="pwd" size=12 value=""></p>
+	</center>
+	<p align = "center"><button type="button" onclick="javascript:if(loginCheck()==true) submit()">LOGIN</button>
+	</fieldset>
+</center>
+</form>
+</body>
+</html>

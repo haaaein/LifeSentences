@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Join Life Sentences</title>
+<link rel="icon" href="images/yellow.jpg" type="images/yellow.jpg">
+<link type="text/css" rel="stylesheet" href="text.css"></link>
+	<script src="test.js"></script>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script>
+	function idCheck() {
+		var i;
+		for (i=0;i<3;i++) {
+		if (member_id[i]==joinForm.id.value) {
+			alert("입력하신 아이디는 사용중입니다. 다시 입력하세요");
+			joinForm.id.value="";
+			return;}
+		else {
+			alert("입력하신 아이디는 사용가능합니다.");
+			return;}
+		}
+		}
+	</script>
+	<script>
+	function joinCheck() {
+	var joinForm=document.joinForm;
+	var id=joinForm.id.value;
+	var pw=joinForm.pw.value;
+	var pw1=joinForm.pw1.value;
+	var name=joinForm.name.value;
+	
+		while (joinForm) {
+			if (!id || !pw || !name) {
+			alert("필수요소는 반드시 입력하세요.");
+			joinForm.id.value="";
+			joinForm.pw.value="";
+			joinForm.name.value="";
+			return false;
+			}
+			else 
+			joinForm.submit();
+			return true;
+			
+			if (pw != pw1)
+			alert("동일한 비밀번호를 제대로 두 번 입력해야 합니다.");
+		}
+		
+		}
+	</script>
+<style>
+a {
+color: yellow;
+text-decoration: none;
+}
+table, th, td {
+  border: 1px solid black;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+</style>
+<h1><pre><font face="Blackoak Std"><a href="index.html"> L    i     f     e <br> sentences</a></font></pre></h1>
+</head>
+<body background="images/life.jpg">
+<br><br>
+<table>
+<table cellspacing="0" cellpadding="10" width="700" height="300" align="center">
+<class="boxshadow1">
+<form name="joinForm" action="member.jsp" method="get">
+<font face="나눔스퀘어">
+  <tr>
+    <td align="right">ID</td>
+	<td>&nbsp;&nbsp
+    <input type=text size=15 name="id" value="">&nbsp;&nbsp;
+	<button type="button" name="idcheck" onclick="idCheck()">CHECK</button>
+	</td>
+  </tr> 
+         
+  <tr>
+    <td align="right">PASSWORD</td> 
+    <td>&nbsp;&nbsp;
+	<input type="password" size=15 name="pw" value="">&nbsp;&nbsp;
+	CHECK &nbsp; <input type="password" size=15 name="pw1" value="">
+	</td>
+  </tr>  
+
+  <tr>
+    <td align="right">NAME</td>
+    <td>&nbsp;&nbsp;
+	<input type=text size=7 name="name"></td>
+  </tr>
+  <tr>
+    <td align="right">NICKNAME</td>
+    <td>&nbsp;&nbsp;
+	<input type=text size=7 name="nickname"></td>
+  </tr>
+    <tr>
+	<td align="right">PHONE</td>
+	<td>&nbsp;&nbsp;
+  <select id="cellnum">
+	<option value="010">010</option>
+	<option value="011">011</option>
+	<option value="012">012</option>
+  </select>&nbsp;-&nbsp;
+	<input type="text" size=5 value="">&nbsp;-&nbsp;
+	<input type="text" size=5 value=""></td>
+  </tr>
+	
+  <tr>
+	<td align="right">ADDRESS</td>
+	<td>&nbsp;&nbsp;
+	<input type="text" size=20 name="address" value="">
+	<input type="hidden" id="address" name="address" value="">
+	<input type="button" name="address" value="주소찾기">
+	</td>
+  </tr>
+	<tr>
+    <td colspan="2" align="center">   
+	<input type="button" value="JOIN" onClick="javascript:joinCheck()">
+	<input type="reset" value="RESET">
+    </td>
+  </tr>
+ </form>
+ </table>
+</body>
+</html>

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	img {
+	position: absolute;
+	left: 80px;
+	top: 20px;
+	}
+	table, th, td {
+	  border: 1px solid black;
+	  background-image: url("images/life6.jpg");
+	  background-color: black;
+	  opacity: 0.8;
+	  color: white;
+	}
+	</style>
+</head>
+<body>
+	<br>
+	<font face="나눔스퀘어"><center>
+	<h2>SHARE YOUR SENTENCES</h2></font>
+		<table cellspacing="0" cellpadding="10" width="700" height="300" align="center">
+		<class="boxshadow1">
+		<form name="shareForm" action="share.jsp" method="get">
+		<font face="나눔스퀘어">
+		  <tr>
+			<td align="right">TITLE</td>
+			<td>&nbsp;&nbsp
+			<input type=text size=30 name="title">&nbsp;&nbsp;
+			</td>
+		  </tr> 
+		  <tr>
+			<td align="right">AUTHOR</td> 
+			<td>&nbsp;&nbsp;
+			<input type="author" size=20 name="author" value="">&nbsp;&nbsp;
+			</td>
+		  </tr>  
+
+		  <tr>
+			<td align="right">PUBLISHER</td>
+			<td>&nbsp;&nbsp;
+			<input type=text size=20 name="name"></td>
+		  </tr>
+		   <tr>
+			<td align="right">SENTENCES</td>
+			<td>&nbsp;&nbsp;
+			<textarea cols="60" rows="5" placeholder="WRITE SENTENCES"></textarea></td>
+		  </tr>
+			<tr>
+			<td colspan="2" align="center">   
+			<button type="submit">SHARE</button>
+			</td>
+		  </tr>
+		 </form>
+		 </table>
+	</center>
+</body>
+</html>

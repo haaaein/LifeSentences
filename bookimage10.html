@@ -1,0 +1,43 @@
+﻿<html>
+<head>
+	<style>
+	img {
+		position: absolute;
+		left: 150px;
+		top: 50px;
+	}
+	button {
+		background-color: white;
+		color: black;
+		border: 2px solid black;
+		padding: 5px 10px;
+	}
+	</style>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script> 
+         $(document).ready(function() {
+            $("button.b1").click(function() {
+                $("img").animate( {
+                    width: '200px',
+					height: '400px'
+                });
+	        });
+	        $("button.b2").click(function() {
+                $("img").animate( {
+                    width: '600px',
+					height: '800px'
+                });
+	        });
+        });
+    </script> 
+</head>
+<body>
+<div>
+	<center>
+	<img src="images/10.jpg" width="400" height="700">
+	</center>
+	<pre>                                            <button class="b1">축소</button> <button class="b2">확대</button></pre>
+	
+</div>
+</body>
+</html>
