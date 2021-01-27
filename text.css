@@ -37,13 +37,13 @@ html,body {width:100%; height:100%; margin:0px; padding:0px; overflow:hidden; fo
 #fullpage {position:relative; top:0px; z-index:9; width:100%; height:100%;} 
 .fullsection{width:100%; height:100%; position:relative;} 
 .full1{background-image: url("images/life.jpg");} 
-.full2{background:yellow;}  
+.full2{background:white;}  
 #fullpage span{
 	display:block; 
 	position:absolute; top:50%; 
 	left:50%; 
 	transform:translate(-50%,-50%); 
-	color:#fff;
+	color:rgb(0, 0, 0);
 	font-size:4em;
 	font-weight:bold;
 } 
