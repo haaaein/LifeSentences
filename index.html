@@ -13,6 +13,30 @@
 			min-height: 100%;
 		}
 		
+		.ls {
+			color: rgb(251, 244, 40);
+			font-size: 120px;
+			font-family: "Times New Roman", Times, serif;
+			font-weight: bold;
+		}
+
+		.today {
+			font-weight: normal;
+			font-family: "Times New Roman", Times, serif;
+			font-size: 80px;
+		}
+
+		.week {
+			font-weight: lighter;
+			font-family: "Times New Roman", Times, serif;
+			font-size: 50px;
+		}
+
+		.month {
+			font-weight: bold;
+			font-family: "Times New Roman", Times, serif;
+			font-size: 60px;
+		}
 	</style>
 </head>
 <body>
@@ -20,11 +44,17 @@
 		<div class='quick'><ul></ul></div> 
 		<div class="fullsection full1" pageNum="1">
 			<span id="fullpage span">
-				Life Sentences -> image
+				<h2 class="ls"
+					style="display: inline-block;">Life Sentences</h2>
 			</span>	
 		</div> 
 		<div class="fullsection full2" pageNum="2">
-			;//뭐넣을지.., span 넓이, 높이 변경하고 이미지 넣기!
+			<div>
+				<h2 class="today" style="display: inline-block;"><a href="today.html">Today's Sentences</a></h2><br>
+					<h3 class="week" style="display: inline-block;"><a href="week.html">Weekly Best</a></h3>
+					<h3 style="display: inline-block;">------------------------------------------------</h3>
+					<h3 class="month" style="display: inline-block;"><a href="month.html">Monthly Best</a></h3>
+			</div>
 		</div> 
 	</div>
 

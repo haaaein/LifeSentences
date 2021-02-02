@@ -7,8 +7,8 @@
 	<script src="test.js"></script>
 	<script>
 	function findName(str) {
-		for(var i=0;i<member_name.length;i++)
-			if(member_id[i]==str)
+		for(const i = 0; i < member_name.length; i++)
+			if(member_id[i] == str)
 				return member_name[i];
 	}
 	
@@ -24,10 +24,10 @@
 		<fieldset>
 			<script type="text/javascript">
 				<%String strID=request.getParameter("id");%>
-				var strName = "<%=strID%>";
+				const strName = "<%=strID%>";
 				document.write(findName(strName) + "'s Life sentences. <br/> Let's read and share. <br>");
 			</script>
-			<p align ="center"> <input type="submit" value="로그아웃" onclick="javascript:logoutProcess(); submit()"></p>
+			<p align="center"> <input type="submit" value="로그아웃" onclick="javascript:logoutProcess(); submit()"></p>
 		</fieldset>
 	</form>
 </div>
