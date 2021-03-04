@@ -2,37 +2,51 @@
 <html>
 <head>
 	<link type="text/css" rel="stylesheet" href="text.css"></link>
+	<link rel="icon" href="images/yellow.jpg" type="images/yellow.jpg"></link>
 	<style>
-	div {
-	margin-left: 70px;
+	.date, h2 {
+		margin-top: 50px;
+		font-family: "나눔스퀘어";
+		font-size: 35px;
+		display: inline;
+	}
+	.sentence {
+		margin-top: 10px;
+		font-family: "Times New Roman", Times, serif;
+		font-size: 35px;
+		margin-left: 400px;
+		font-weight: bold;
+		margin-bottom: 10px;
 	}
 	</style>
 	<script>
-		
 		function changeTime()
 		{   
 		   var today = new Date();
 		   var year=1900 + today.getYear() + "년 ";
-		   var day=today.getMonth() + 1 + "월 " + today.getDate() + "일 ";
+		   var day=(today.getMonth() + 1 + "월 " + today.getDate() + "일 ");
 		   document.getElementById("changeTime").value=year+day;
 		   setTimeout("changeTime()", 1000);
 		}
 	</script>
 </head>
+
 <body onLoad="changeTime()">
 	<div>
-	<font face="나눔스퀘어"><center>
-	<h2>
-	<input type="text" id="changeTime" size="10">'s sentences<br></h2></font>
-	<fieldset>
-		<a href="book1.html" target="_blank">무거움, 필연성 그리고 가치는 내면적으로 연결된 세 개념이다.<br>필연적인 것만이 진중한 것이고, 묵직한 것만이 가치 있는 것이다.</a>
-	</fieldset>
-	<br>
-	<fieldset>
-		<a href="book2.html" target="_blank">내가 죽은 뒤에는 사람들이 나를 잊어버릴 거라는 사실도 잘 알고 있었다.</a>
-	</fieldset>
-	</center>
+		<center>
+			<input type="text" id="changeTime" size="12" class="date"><h2> 's Sentences</h2>
+			<div>
+				<a href="book1.html" target="_blank" class="sentence">
+				<h1>무거움, 필연성 그리고 가치는 내면적으로 연결된 세 개념이다. 필연적인 것만이 진중한 것이고, 묵직한 것만이 가치 있는 것이다.</h1>
+				</a>
+			</div>
+			<div>
+				<a href="book2.html" target="_blank" class="sentence">
+				<h1>내가 죽은 뒤에는 사람들이 나를 잊어버릴 거라는 사실도 잘 알고 있었다.</h1>
+				</a>
+			</div>
+		</center>
 	</div>
-</body> 
 </body>
+
 </html>

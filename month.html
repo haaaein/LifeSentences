@@ -1,41 +1,72 @@
 ﻿<!DOCTYPE html>
 <head>
 	<link type="text/css" rel="stylesheet" href="text.css"></link>
+	<link rel="icon" href="images/yellow.jpg" type="images/yellow.jpg"></link>
 	<style>
 	div {
-	margin-left: 70px;
+	margin-left: 20px;
+	margin-right: 20px;
+	}
+	.month {
+		margin-top: 50px;
+		font-family: "나눔스퀘어";
+		font-size: 35px;
+		display: inline;
+	}
+
+	.sentence {
+		margin-top: 0px;
+		font-size: 25px;
+		font-weight: lighter;
 	}
 	</style>
+	<script>
+		function changeMonth()
+		{   
+		   var today = new Date();
+		   var month=today.getMonth() + 1 + "월 ";
+		   document.getElementById("changeMonth").value=month;
+		   setTimeout("changeMonth()", 1000);
+		}
+	</script>
 </head>
-<body>
+<body onLoad="changeMonth()">
+	<center>
+	<input type="text" id="changeMonth" size="3" class="month">
+		<h2 class="month"> 'S SENTENCES</h2>
 	<div>
-	<font face="나눔스퀘어"><center>
-	<h2>JULY'S SENTENCES</h2></font>
-	<fieldset>
-		<a href="book4.html" target="_blank">
-		기억하는 가장 좋은 방법은 감동받는 것이라고 합니다. 그래서인지 지식이 많은 친구들보다, 감동을 잘 받는 친구들이 일을 더 잘합니다. <br>
-		감동을 잘 받는다는 건 풍요로운 삶을 살고 있다는 증거이기 때문입니다. 그 친구들은 돈이 있건 없건 상관 없어요.<br>
-		하나에도 감탄하고 음악 하나 들으면서 정말 좋다는 걸 알아요. 그런 친구들이 일도 잘하고 인생이 풍요롭죠.</a>
-	</fieldset><br>
-	<fieldset>
-		<a href="book5.html"target="_blank">
-		거짓말을 하지 않으면 살 수 없는 나라에서<br>
-		당신도 압축된 거짓을 사용했습니다.<br>
-		서로 오래 물들어 있었던 탓이겠지요.<br>
+		<a href="book4.html" target="_blank" class="sentence">
+			<h1>
+				기억하는 가장 좋은 방법은 감동받는 것이라고 합니다. 그래서인지 지식이 많은 친구들보다, 감동을 잘 받는 친구들이 일을 더 잘합니다.
+				감동을 잘 받는다는 건 풍요로운 삶을 살고 있다는 증거이기 때문입니다. 그 친구들은 돈이 있건 없건 상관 없어요.
+				하나에도 감탄하고 음악 하나 들으면서 정말 좋다는 걸 알아요. 그런 친구들이 일도 잘하고 인생이 풍요롭죠.
+			</h1>
 		</a>
-	</fieldset><br>
-	<fieldset>
-		<a href="book9.html"target="_blank">
-		환한 전깃불 아래 두 마리의 짐승이 있었습니다.<br>
-		</a>
-	</fieldset><br>
-	<fieldset>
-		<a href="book10.html"target="_blank">
-		그러나 존경과 존중보다도 더욱더 그녀 마음속에 간과할 수 없는 호감의 동기가 하나 있었으니, 그것은 감사였다. <br>
-		무례함이라든가 그러면서 퍼부은 모든 부당한 비난들을 용서해 줄 정도로 자신을 여전히 사랑하고 있다는 데 대한 감사였다.
-		</a>
-	</fieldset><br>
-	</center>
 	</div>
+	<div>
+		<a href="book5.html"target="_blank" class="sentence">
+			<h1>
+				거짓말을 하지 않으면 살 수 없는 나라에서
+				당신도 압축된 거짓을 사용했습니다.
+				서로 오래 물들어 있었던 탓이겠지요.
+			</h1>
+		</a>
+	</div>
+	<div>
+		<a href="book9.html"target="_blank" class="sentence">
+			<h1>
+				환한 전깃불 아래 두 마리의 짐승이 있었습니다.
+			</h1>
+		</a>
+	</div>
+	<div>
+		<a href="book10.html"target="_blank" class="sentence">
+			<h1>
+				그러나 존경과 존중보다도 더욱더 그녀 마음속에 간과할 수 없는 호감의 동기가 하나 있었으니, 그것은 감사였다.
+				무례함이라든가 그러면서 퍼부은 모든 부당한 비난들을 용서해 줄 정도로 자신을 여전히 사랑하고 있다는 데 대한 감사였다.
+			</h1>
+		</a>
+	</div>
+	</center>
 </body>
 </html>
